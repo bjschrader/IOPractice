@@ -6,10 +6,9 @@ import java.io.*;
  *
  * @author schra_000
  */
-public class IOPractice {
-
+public class Startup {
+    
     public static void main(String[] args) {
-        
         File data = new File(File.separatorChar + "temp" + File.separatorChar 
                         + "lab1.txt");
         
@@ -19,7 +18,7 @@ public class IOPractice {
 	   String line = in.readLine();
 	   while(line != null){
 		  System.out.println(line);
-		  line = in.readLine();  // strips out any carriage return chars
+		  line = in.readLine();  
 	   }
 	 
         } catch(IOException ioe) {
@@ -32,6 +31,4 @@ public class IOPractice {
             }
         }
     }
-    
-    
 }
